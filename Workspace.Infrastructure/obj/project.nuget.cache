@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "kczBqfk6Pfo=",
+  "dgSpecHash": "lzUYWYRCOAQ=",
   "success": true,
   "projectFilePath": "/Users/dhnk/Documents/DEV/Workspace/Workspace/Workspace.Infrastructure/Workspace.Infrastructure.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "/Users/dhnk/.nuget/packages/bcrypt.net-next/4.0.3/bcrypt.net-next.4.0.3.nupkg.sha512"
+  ],
   "logs": []
 }
