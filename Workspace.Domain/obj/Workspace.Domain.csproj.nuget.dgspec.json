@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/dhnk/Documents/DEV/Workspace/Workspace.Domain/Workspace.Domain.csproj": {}
+    "/Users/dhnk/Documents/DEV/Workspace/Workspace/Workspace.Domain/Workspace.Domain.csproj": {}
   },
   "projects": {
-    "/Users/dhnk/Documents/DEV/Workspace/Workspace.Domain/Workspace.Domain.csproj": {
+    "/Users/dhnk/Documents/DEV/Workspace/Workspace/Workspace.Domain/Workspace.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/dhnk/Documents/DEV/Workspace/Workspace.Domain/Workspace.Domain.csproj",
+        "projectUniqueName": "/Users/dhnk/Documents/DEV/Workspace/Workspace/Workspace.Domain/Workspace.Domain.csproj",
         "projectName": "Workspace.Domain",
-        "projectPath": "/Users/dhnk/Documents/DEV/Workspace/Workspace.Domain/Workspace.Domain.csproj",
+        "projectPath": "/Users/dhnk/Documents/DEV/Workspace/Workspace/Workspace.Domain/Workspace.Domain.csproj",
         "packagesPath": "/Users/dhnk/.nuget/packages/",
-        "outputPath": "/Users/dhnk/Documents/DEV/Workspace/Workspace.Domain/obj/",
+        "outputPath": "/Users/dhnk/Documents/DEV/Workspace/Workspace/Workspace.Domain/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/dhnk/.nuget/NuGet/NuGet.Config"

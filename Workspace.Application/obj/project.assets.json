@@ -32,11 +32,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/dhnk/Documents/DEV/Workspace/Workspace.Application/Workspace.Application.csproj",
+      "projectUniqueName": "/Users/dhnk/Documents/DEV/Workspace/Workspace/Workspace.Application/Workspace.Application.csproj",
       "projectName": "Workspace.Application",
-      "projectPath": "/Users/dhnk/Documents/DEV/Workspace/Workspace.Application/Workspace.Application.csproj",
+      "projectPath": "/Users/dhnk/Documents/DEV/Workspace/Workspace/Workspace.Application/Workspace.Application.csproj",
       "packagesPath": "/Users/dhnk/.nuget/packages/",
-      "outputPath": "/Users/dhnk/Documents/DEV/Workspace/Workspace.Application/obj/",
+      "outputPath": "/Users/dhnk/Documents/DEV/Workspace/Workspace/Workspace.Application/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/dhnk/.nuget/NuGet/NuGet.Config"
@@ -51,8 +51,8 @@
         "net10.0": {
           "targetAlias": "net10.0",
           "projectReferences": {
-            "/Users/dhnk/Documents/DEV/Workspace/Workspace.Domain/Workspace.Domain.csproj": {
-              "projectPath": "/Users/dhnk/Documents/DEV/Workspace/Workspace.Domain/Workspace.Domain.csproj"
+            "/Users/dhnk/Documents/DEV/Workspace/Workspace/Workspace.Domain/Workspace.Domain.csproj": {
+              "projectPath": "/Users/dhnk/Documents/DEV/Workspace/Workspace/Workspace.Domain/Workspace.Domain.csproj"
             }
           }
         }
