@@ -21,12 +21,17 @@ namespace Workspace.Domain.Entities
             Email = email;
         }
 
-        public void Update(string passwordHash, string name, string surname, string? email)
+        public void UpdateProfile(string name, string surname, string? email)
         {
-            PasswordHash = passwordHash;
             Name = name;
             Surname = surname;
             Email = email;
+            UpdatedAt = DateTime.UtcNow;
+        }
+
+        public void SetPassword(string passwordHash)
+        {
+            PasswordHash = passwordHash;
             UpdatedAt = DateTime.UtcNow;
         }
     }
