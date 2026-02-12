@@ -1,10 +1,22 @@
 {
   "version": 2,
-  "dgSpecHash": "flLf/kEXWJM=",
+  "dgSpecHash": "Eyyf/WVMNe8=",
   "success": true,
   "projectFilePath": "/Users/dhnk/Documents/DEV/Workspace/Workspace/Workspace.API/Workspace.API.csproj",
   "expectedPackageFiles": [
-    "/Users/dhnk/.nuget/packages/bcrypt.net-next/4.0.3/bcrypt.net-next.4.0.3.nupkg.sha512"
+    "/Users/dhnk/.nuget/packages/bcrypt.net-next/4.0.3/bcrypt.net-next.4.0.3.nupkg.sha512",
+    "/Users/dhnk/.nuget/packages/microsoft.data.sqlite.core/10.0.3/microsoft.data.sqlite.core.10.0.3.nupkg.sha512",
+    "/Users/dhnk/.nuget/packages/microsoft.entityframeworkcore/10.0.3/microsoft.entityframeworkcore.10.0.3.nupkg.sha512",
+    "/Users/dhnk/.nuget/packages/microsoft.entityframeworkcore.abstractions/10.0.3/microsoft.entityframeworkcore.abstractions.10.0.3.nupkg.sha512",
+    "/Users/dhnk/.nuget/packages/microsoft.entityframeworkcore.analyzers/10.0.3/microsoft.entityframeworkcore.analyzers.10.0.3.nupkg.sha512",
+    "/Users/dhnk/.nuget/packages/microsoft.entityframeworkcore.relational/10.0.3/microsoft.entityframeworkcore.relational.10.0.3.nupkg.sha512",
+    "/Users/dhnk/.nuget/packages/microsoft.entityframeworkcore.sqlite/10.0.3/microsoft.entityframeworkcore.sqlite.10.0.3.nupkg.sha512",
+    "/Users/dhnk/.nuget/packages/microsoft.entityframeworkcore.sqlite.core/10.0.3/microsoft.entityframeworkcore.sqlite.core.10.0.3.nupkg.sha512",
+    "/Users/dhnk/.nuget/packages/microsoft.extensions.dependencymodel/10.0.3/microsoft.extensions.dependencymodel.10.0.3.nupkg.sha512",
+    "/Users/dhnk/.nuget/packages/sqlitepclraw.bundle_e_sqlite3/2.1.11/sqlitepclraw.bundle_e_sqlite3.2.1.11.nupkg.sha512",
+    "/Users/dhnk/.nuget/packages/sqlitepclraw.core/2.1.11/sqlitepclraw.core.2.1.11.nupkg.sha512",
+    "/Users/dhnk/.nuget/packages/sqlitepclraw.lib.e_sqlite3/2.1.11/sqlitepclraw.lib.e_sqlite3.2.1.11.nupkg.sha512",
+    "/Users/dhnk/.nuget/packages/sqlitepclraw.provider.e_sqlite3/2.1.11/sqlitepclraw.provider.e_sqlite3.2.1.11.nupkg.sha512"
   ],
   "logs": []
 }
