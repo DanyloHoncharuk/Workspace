@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "SvHEAfwSx9E=",
+  "dgSpecHash": "q83MiI6qsjU=",
   "success": true,
   "projectFilePath": "/Users/dhnk/Documents/DEV/Workspace/Workspace/Workspace.Application/Workspace.Application.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "/Users/dhnk/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/10.0.3/microsoft.extensions.dependencyinjection.abstractions.10.0.3.nupkg.sha512"
+  ],
   "logs": []
 }
