@@ -3,6 +3,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Workspace.Application.Interfaces;
 using Workspace.Infrastructure.Data;
+using Workspace.Infrastructure.Data.Repositories;
 using Workspace.Infrastructure.Services;
 
 
@@ -16,6 +17,8 @@ public static class DependencyInjection
             options.UseSqlite(configuration.GetConnectionString("DefaultConnection")));
         
         services.AddScoped<IPasswordHasher, BCryptPasswordHasher>();
+        services.AddScoped<IUnitOfWork, UnitOfWork>();
+        services.AddScoped<IUserRepository, UserRepository>();
 
         return services;
     }

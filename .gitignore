@@ -1,0 +1,9 @@
+# SQLite database files
+*.db
+*.db-shm
+*.db-wal
+
+# Folders to ignore
+bin/
+obj/
+.vs/
