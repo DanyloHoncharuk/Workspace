@@ -13,14 +13,14 @@ namespace Workspace.Infrastructure.Data.Repositories
             _context = context;
         }
 
-        public async Task<User?> GetUserByIdAsync(Guid userId)
+        public async Task<User?> GetUserByIdAsync(Guid userId, CancellationToken cancellationToken = default)
         {
             return await _context.Users.FindAsync(userId);
         }
 
-        public async Task<User?> GetUserByLoginAsync(string login)
+        public async Task<User?> GetUserByLoginAsync(string login, CancellationToken cancellationToken = default)
         {
-            return await _context.Users.FirstOrDefaultAsync(u => u.Login == login);
+            return await _context.Users.FirstOrDefaultAsync(u => u.Login == login, cancellationToken);
         }
 
         public void CreateUser(User user)

@@ -21,5 +21,8 @@ namespace Workspace.Application.Common
 
         public static Result<T> Success(T data) => new Result<T>(data);
         public static Result<T> Failure(Error error) => new Result<T>(error);
+
+        public static implicit operator Result<T>(T data) => Success(data);
+        public static implicit operator Result<T>(Error error) => Failure(error);
     }
 }
