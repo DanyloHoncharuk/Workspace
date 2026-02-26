@@ -1,4 +1,14 @@
 namespace Workspace.Application.Common
 {
-    public record Error(string Code, string Description = "");
+
+    public enum ErrorType
+    {
+        NotFound,
+        Validation,
+        Unauthorized,
+        Forbidden,
+        Conflict,
+        InternalServerError
+    }
+    public record Error(string Code, string Description = "", ErrorType Type = ErrorType.InternalServerError);
 }
