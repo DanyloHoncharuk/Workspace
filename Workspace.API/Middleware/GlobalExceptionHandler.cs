@@ -1,7 +1,9 @@
 using Microsoft.AspNetCore.Diagnostics;
 using Workspace.Application.Common;
 
-public class GlobalExceptionHandler : IExceptionHandler
+namespace Workspace.API.Middleware
+{
+    public class GlobalExceptionHandler : IExceptionHandler
 {
     public async ValueTask<bool> TryHandleAsync(
         HttpContext context,
@@ -17,4 +19,5 @@ public class GlobalExceptionHandler : IExceptionHandler
 
         return true;
     }
+}
 }

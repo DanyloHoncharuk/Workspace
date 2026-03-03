@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <ItemGroup>
     <ProjectReference Include="..\Workspace.Application\Workspace.Application.csproj" />
@@ -16,6 +16,7 @@
     <TargetFramework>net10.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>c6d62254-a6f7-4fa4-9e54-164d9f2d76f3</UserSecretsId>
   </PropertyGroup>
 
 </Project>
