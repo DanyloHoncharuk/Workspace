@@ -1,7 +1,8 @@
 using MediatR;
 using Workspace.Application.Common;
+using Workspace.Application.Features.Auth.Common;
 
-namespace Workspace.Application.Features.Users.Commands.RegisterUser
+namespace Workspace.Application.Features.Auth.Commands.Register
 {
     public record RegisterUserCommand(
         string Login, 
@@ -9,5 +10,5 @@ namespace Workspace.Application.Features.Users.Commands.RegisterUser
         string Name,
         string Surname,
         string? Email
-        ) : IRequest<Result<Guid>>;
+        ) : IRequest<Result<AuthResponse>>;
 }
