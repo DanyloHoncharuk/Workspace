@@ -2,7 +2,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Workspace.Application.Interfaces;
-using Workspace.Infrastructure.Authentication;
+using Workspace.Infrastructure.Auth;
 using Workspace.Infrastructure.Data;
 using Workspace.Infrastructure.Data.Repositories;
 
@@ -20,7 +20,7 @@ public static class DependencyInjection
         services.AddScoped<IUnitOfWork, UnitOfWork>();
         services.AddScoped<IUserRepository, UserRepository>();
 
-        services.AddSingleton<IJwtGenerator, JwtGenerator>();
+        services.AddSingleton<IJwtProvider, JwtProvider>();
 
         return services;
     }

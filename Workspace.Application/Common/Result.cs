@@ -3,7 +3,7 @@ namespace Workspace.Application.Common
     public class Result<T>
     {
         public bool IsSuccess { get; private set; }
-        public T? Data { get; private set; }
+        public T? Data{ get; private set; }
         public Error? Error { get; private set; }
 
         private Result(T? data)

@@ -2,17 +2,18 @@ using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
+using System.Security.Cryptography;
 using System.Text;
 using Workspace.Application.Common;
 using Workspace.Application.Interfaces;
 
-namespace Workspace.Infrastructure.Authentication
+namespace Workspace.Infrastructure.Auth
 {
-    public class JwtGenerator : IJwtGenerator
+    public class JwtProvider : IJwtProvider
     {
         private readonly JwtSettings _jwtSettings;
 
-        public JwtGenerator(IOptions<JwtSettings> jwtSettings)
+        public JwtProvider(IOptions<JwtSettings> jwtSettings)
         {
             _jwtSettings = jwtSettings.Value;
         }
@@ -39,6 +40,16 @@ namespace Workspace.Infrastructure.Authentication
 
             return new JwtSecurityTokenHandler().WriteToken(token);
             
+        }
+
+        public string GenerateRefreshToken()
+        {
+            var randomBytes = new byte[32];
+            using (var rng = RandomNumberGenerator.Create())
+            {
+                rng.GetBytes(randomBytes);
+                return Convert.ToBase64String(randomBytes);
+            }
         }
     }
 }

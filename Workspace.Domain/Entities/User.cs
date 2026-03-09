@@ -2,7 +2,7 @@ using Workspace.Domain.Common;
 
 namespace Workspace.Domain.Entities
 {
-    public class User : BaseEntity
+    public class User : BaseSoftDeletableEntity
     {
         public string Login { get; private set; }
         public string PasswordHash { get; private set; }

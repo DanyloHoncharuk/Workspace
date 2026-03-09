@@ -1,6 +1,6 @@
 using Workspace.Application.Interfaces;
 
-namespace Workspace.Infrastructure.Authentication
+namespace Workspace.Infrastructure.Auth
 {
     public class BCryptPasswordHasher : IPasswordHasher
     {

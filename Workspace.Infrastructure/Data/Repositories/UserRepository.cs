@@ -13,6 +13,7 @@ namespace Workspace.Infrastructure.Data.Repositories
             _context = context;
         }
 
+        // User-related data access methods
         public async Task<User?> GetUserByIdAsync(Guid userId, CancellationToken cancellationToken = default)
         {
             return await _context.Users.FindAsync(userId);
@@ -23,14 +24,22 @@ namespace Workspace.Infrastructure.Data.Repositories
             return await _context.Users.FirstOrDefaultAsync(u => u.Login == login, cancellationToken);
         }
 
-        public void CreateUser(User user)
+        public void AddUser(User user)
         {
             _context.Users.Add(user);
         }
 
-        public void UpdateUser(User user)
+        // RefreshToken-related data access methods
+        public async Task<RefreshToken?> GetRefreshTokenByTokenAsync(string token, CancellationToken cancellationToken = default)
         {
-            _context.Users.Update(user);
+            return await _context.RefreshTokens
+                .Include(rt => rt.User) // Related user
+                .FirstOrDefaultAsync(cancellationToken);
+        }
+
+        public void AddRefreshToken(RefreshToken refreshToken)
+        {
+            _context.RefreshTokens.Add(refreshToken);
         }
     }
 }

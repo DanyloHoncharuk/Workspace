@@ -4,5 +4,5 @@ using Workspace.Application.Features.Auth.Common;
 
 namespace Workspace.Application.Features.Auth.Commands
 {
-    public record LoginUserCommand(string Login, string Password) : IRequest<Result<AuthResponse>>;
+    public record RefreshTokenCommand(string AccessToken, string RefreshToken) : IRequest<Result<AuthResponse>>;
 }

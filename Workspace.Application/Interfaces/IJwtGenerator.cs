@@ -1,7 +1,10 @@
 namespace Workspace.Application.Interfaces
 {
-    public interface IJwtGenerator
+    public interface IJwtProvider
     {
         string GenerateToken(string userId, string login);
+        string GenerateRefreshToken();
+
+        
     }
 }

@@ -5,7 +5,7 @@ using Workspace.Application.Features.Auth.Common;
 using Workspace.Application.Interfaces;
 using Workspace.Domain.Entities;
 
-namespace Workspace.Application.Features.Auth.Commands.Register
+namespace Workspace.Application.Features.Auth.Commands
 {
     public class RegisterUserCommandHandler : IRequestHandler<RegisterUserCommand, Result<AuthResponse>>
     {
@@ -39,11 +39,21 @@ namespace Workspace.Application.Features.Auth.Commands.Register
                 request.Email
             );
 
-            _userRepository.CreateUser(user);
-            await _unitOfWork.SaveChangesAsync(cancellationToken);
-            var token = _jwtGenerator.GenerateToken(user.Id.ToString(), user.Login);
+            _userRepository.AddUser(user);
 
-            return new AuthResponse(user.Id, token);
+            var accessToken = _jwtGenerator.GenerateToken(user.Id.ToString(), user.Login);
+            var refreshTokenString = _jwtGenerator.GenerateRefreshToken();
+
+            var refreshToken = new RefreshToken(
+                user.Id,
+                refreshTokenString,
+                DateTime.UtcNow.AddDays(7)
+            );
+
+            _userRepository.AddRefreshToken(refreshToken);
+            await _unitOfWork.SaveChangesAsync(cancellationToken);
+
+            return new AuthResponse(user.Id, accessToken, refreshTokenString);
         }
     }
 }

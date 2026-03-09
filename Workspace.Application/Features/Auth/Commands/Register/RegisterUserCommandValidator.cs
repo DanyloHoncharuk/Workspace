@@ -3,7 +3,7 @@ using Workspace.Application.Common;
 using Workspace.Application.Common.Errors;
 using Workspace.Application.Common.Validation;
 
-namespace Workspace.Application.Features.Auth.Commands.Register
+namespace Workspace.Application.Features.Auth.Commands
 {
     public class RegisterUserCommandValidator : AbstractValidator<RegisterUserCommand>
     {
